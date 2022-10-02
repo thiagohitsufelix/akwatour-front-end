@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './componentes/Header';
+import Body from './componentes/Body';
+import { useState } from 'react';
+import Cadastrar from './componentes/Cadastrar';
 
 function App() {
+
+  const [log,setLog]=useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className='caixa'>
+      <Header className='logo'/>
+      <Body/>
+    </section>
   );
 }
 
