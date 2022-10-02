@@ -1,5 +1,7 @@
 import React from "react";
 
+
+//esse componente é responsavel pelo cadastro, só será chamado para cadastrar novos usuários
 export default function Cadastrar(){
     return (
         <section>
@@ -7,7 +9,8 @@ export default function Cadastrar(){
             <p>E-mail: </p>
             <p>Senha: </p>
             <p>Cidade: </p>
-            <button>Salvar</button>
+            <button>Registrar</button>
+            <button>Voltar</button>
         </section>
     )
 }
